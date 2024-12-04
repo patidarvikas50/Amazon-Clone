@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Amazon Clone</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <div class="navbar">
+        <!-- logo -->
+        <div class="navlogo border">
+          <div class="logo"></div>
+        </div>
+
+        <!-- Address -->
+        <div class="nav-adress border">
+          <p class="add-first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">India</p>
+          </div>
+        </div>
+
+        <!-- Search-bar -->
+
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+          </select>
+          <input placeholder="Search Amazon" class="input-search" />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <!--Select Country-->
+
+        <div class="country">
+          <div class="usa-logo"></div>
+          <select class="country-option">
+            <option>En</option>
+            <option>Ind</option>
+            <option>USA</option>
+            <option>Aus</option>
+          </select>
+        </div>
+
+        <!-- sing In -->
+        <div class="sing-in border">
+          <p><span>Hello, Sing in</span></p>
+          <p class="nav-second">Accounts & List</p>
+        </div>
+
+        <!-- return -->
+        <div class="return border">
+          <p><span>Return</span></p>
+          <p class="nav-second">& Orders</p>
+        </div>
+
+        <!-- cart -->
+        <div class="nav-cart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
+        </div>
+      </div>
+
+      <!-- panel -->
+
+      <div class="panel">
+        <div class="panel-all">
+          <i class="fa-solid fa-bars"></i>
+          All
+        </div>
+
+        <div class="panel-ops">
+          <p>Today's Deals</p>
+          <p>Customer Service</p>
+          <p>Registry</p>
+          <p>Gift Card</p>
+          <p>Sell</p>
+        </div>
+
+        <div class="panel-deals">Shop deals in Electronics</div>
+      </div>
+    </header>
+
+    <!-- hero imgs carousel -->
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img src="hero-img1.jpg" alt="Image 1" />
+        </div>
+        <div class="carousel-slide">
+          <img src="hero-img.jpg" alt="Image 2" />
+        </div>
+        <div class="carousel-slide">
+          <img src="hero-imgs.jpg" alt="Image 3" />
+        </div>
+
+        <div class="carousel-slide">
+          <img src="./c.jpg" alt="Image 3" />
+        </div>
+      </div>
+      <button class="prev-btn" onclick="moveSlides(-1)">&#10094;</button>
+      <button class="next-btn" onclick="moveSlides(1)">&#10095;</button>
+    </div>
+
+    <div class="shop-section">
+      <div class="box1 box">
+        <div class="box-content">
+          <h2>Health & Personal Care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('image1.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2>Best Deals</h2>
+          <div
+            class="box-img"
+            style="background-image: url('best-deal.jpeg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2>Gaming Accessories</h2>
+          <div
+            class="box-img"
+            style="background-image: url('gaming.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h2>Shop deals in Fashion</h2>
+          <div
+            class="box-img"
+            style="background-image: url('fashion.avif')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+
+      <div class="box1 box">
+        <div class="box-content">
+          <h2>Up to 50% off | International brands</h2>
+          <div
+            class="box-img"
+            style="background-image: url('50percent.jpg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2>Minimum 50% off | Indoor plants</h2>
+          <div class="box-img" style="background-image: url('min50.jpg')"></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2>Up to 60% off | Kitchen products from stores near…</h2>
+          <div
+            class="box-img"
+            style="background-image: url('kitchen2.jpeg')"
+          ></div>
+          <p>See More</p>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h2>Yeh Meri Family | Season 4 | Streaming Now</h2>
+          <div
+            class="box-imgLast"
+            style="background-image: url('family.jpg')"
+          ></div>
+          <p>Checkout other exciting shows on mini TV</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- gift-Section -->
+
+    <div class="gift-div">
+      <div class="background-image">
+        <div class="text-overlay">
+          <h1>Gifts For Dad</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+
+    <footer>
+      <div class="footer-panel1">
+        <button id="scrollToTopBtn">↑ Back to Top</button>
+      </div>
+
+      <div class="footer-panel2">
+        <div class="column">
+          <div>Get to Know Us</div>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Press Releases</p>
+          <p>Amazon Science</p>
+        </div>
+        <div class="column">
+          <div>Connect with Us</div>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Instagram</p>
+        </div>
+        <div class="column">
+          <div>Make Money with Us</div>
+          <p>Sell on Amazon</p>
+          <p>Sell under Amazon Accelerator</p>
+          <p>Protect and Build Your Brand</p>
+          <p>Amazon Global Selling</p>
+          <p>Supply to Amazon</p>
+          <p>Become an Affiliate</p>
+          <p>Fulfilment by Amazon</p>
+          <p>Advertise Your Products</p>
+          <p>Amazon Pay on Merchants</p>
+        </div>
+        <div class="column">
+          <div>Get to Know Us</div>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Press Releases</p>
+          <p>Amazon Science</p>
+        </div>
+      </div>
+
+      <div class="footer-panel3">
+        <img src="./download.png" alt="" />
+
+        <div class="globe">
+          <i class="fa-solid fa-globe"></i>
+          <select class="globe-nav">
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Tamil</option>
+            <option>Talegu</option>
+          </select>
+        </div>
+
+        <div class="india-flag">
+          <img src="./india.jpg" alt="" />
+          <p>India</p>
+        </div>
+      </div>
+
+      <div class="foot-panel-last">
+        <div class="column">
+          <ul>
+            <p>AbeBooks</p>
+            <span>Books, art</span
+            ><br />
+            <span>& collectibles</span>
+          </ul>
+
+          <ul>
+            <p>Shopbop</p>
+            <span>Designer</span
+            ><br />
+            <span>Fashion Brands</span>
+          </ul>
+        </div>
+        <div class="column">
+          <ul>
+            <p>Amazon Web Services</p>
+            <span>Scalable Cloud</span
+            ><br />
+            <span>Computing Services</span>
+          </ul>
+
+          <ul>
+            <p>Amazon Business</p>
+            <span>Everything For</span
+            ><br />
+            <span>Your Business</span>
+          </ul>
+        </div>
+
+        <div class="column">
+          <ul>
+            <p>Audible</p>
+            <span>Download</span
+            ><br />
+            <span>Audio Books</span>
+          </ul>
+
+          <ul>
+            <p>Prime Now</p>
+            <span>2-Hour Delivery</span
+            ><br />
+            <span>on Everyday Items</span>
+          </ul>
+        </div>
+        <div class="column">
+          <ul>
+            <p>IMDb</p>
+            <span>Movies, TV</span
+            ><br />
+            <span>& Celebrities</span>
+          </ul>
+
+          <ul>
+            <p>Amazon Prime Music</p>
+            <span>100 million songs, ad-free</span
+            ><br />
+            <span>Over 15 million podcast episodes</span>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="copyright-content">
+          <p>Conditions of Use & Sale</p>
+          <p>Privacy Notice</p>
+          <p>Interest-Based Ads</p>
+        </div>
+
+        <div class="copyright-content2">
+          <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
